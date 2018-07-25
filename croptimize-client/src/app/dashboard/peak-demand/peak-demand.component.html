@@ -1,0 +1,23 @@
+<div class="card ">
+    <div class="card-title text-left text-uppercase">
+        Peak demand
+    </div>
+    <div class="card-body text-center">
+        <div class="text-uppercase">
+            <div class="peak-demand">
+                <div>Actual usage {{actual.value + actual.unit}}</div>
+                <div *ngIf="actual.extra"><small>{{actual.extra}}</small></div>
+            </div>
+        </div>
+        <div class="text-uppercase">
+            <div class="peak-demand">
+                <div>Peak usage {{peak.value + peak.unit}}</div>
+                <div *ngIf="peak.extra"><small>{{peak.extra}}</small></div>
+            </div>
+        </div>
+
+    </div>
+    <div class="card-bottom text-right">
+        <a href="# " class="text-success">details</a>
+    </div>
+</div>

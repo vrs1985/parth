@@ -1,0 +1,12 @@
+{
+    "SELF": "http://localhost:8000",
+    "PORT": 8000,
+    "AUTH_DOMAIN": "energycurb.auth0.com",
+    "API_ROOT": "https://app.energycurb.com/api",
+    "AUTH_AUDIENCE": "app.energycurb.com/api",
+    "AUTH_CLIENT_ID": "Aj3UfZjMkwnNPIZg02egNyjbFJQ6ygy6",
+    "AUTH_CLIENT_SECRET": "glqIg-TpQUFXQxukncbGE3m1JifqAlfN2XvB6oBUg1Ae8gtFz9W2YEUMpIxY-gzh",
+    "AUTH_REDIRECT_URI": "http://localhost:8000/dashboard",
+    "STATIC_FILE_ROOT": "./public",
+    "COOKIE_SIGNING_SECRET": "{{SECRET}}"
+}

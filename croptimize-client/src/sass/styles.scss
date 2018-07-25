@@ -1,0 +1,32 @@
+@import './fonts';
+@import './variables';
+@import './mixins';
+@import '../../node_modules/bootstrap/scss/bootstrap';
+@import '../../node_modules/ionicons-inline/dist/ionicons';
+body {
+    min-height: 100vh;
+    background: $crop-bg-gradient;
+    background-attachment: fixed;
+}
+
+app-root,
+app-dashboard,
+app-home {
+    display: block;
+    min-height: 100vh;
+}
+
+.ctext {
+    &-primary {
+        color: $crop-dark-blue;
+    }
+    &-warning {
+        color: $crop-red;
+    }
+    &-success {
+        color: $crop-green;
+    }
+    &-regular {
+        color: $crop-teal-blue;
+    }
+}

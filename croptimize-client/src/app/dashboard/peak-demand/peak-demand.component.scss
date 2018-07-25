@@ -1,0 +1,6 @@
+.peak-demand {
+    display: inline-block;
+    &>div:last-child {
+        text-align: right;
+    }
+}

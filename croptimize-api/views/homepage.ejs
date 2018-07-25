@@ -1,0 +1,16 @@
+<p>Primero agregar guitarras usando 
+	<pre>
+	POST http://localhost:1337/guitar
+	{ "brand": "Fender" }
+	</pre>
+</p>
+
+<p>Luego de agregar algunas guitarras, elegir una ID a suscribirse. Luego cuando se agreguen comentarios a esa guitarra (usando la URL <code>http://localhost:1337/guitar/1/comments</code> y un JSON <code>{ "text": "mensaje" }</code>), la pagina deberia recibir un mensaje por consola automaticamente (utiliza Socket.io).</p>
+
+<p>Si se escoge una ID, solo se reciben notificaciones de esa ID.</p>
+
+<p id="borrar">
+	<input id="id-sub"><button onclick="sub();">suscribirse</button>
+</p>
+
+<p>Esta plantilla puede servir para crear REST y con Socket (opcional).</p>

@@ -1,0 +1,28 @@
+<div class="btn-group" role="group" aria-label="Basic example">
+    <button class="btn btn-outline-secondary" (click)="sendToken()">send token</button>
+    <button class="btn btn-outline-secondary" (click)="getTestApi()">get test</button>
+    <button class="btn btn-outline-secondary" (click)="subscribeData()">subscribe</button>
+</div>
+<div class="row ">
+    <div class="col-12 col-lg-4">
+
+        <app-live></app-live>
+        <app-usage-by-category></app-usage-by-category>
+
+    </div>
+
+    <div class="col-12 col-lg-4">
+
+        <app-alerts></app-alerts>
+        <app-peak-demand></app-peak-demand>
+
+    </div>
+
+    <div class="col-12 col-lg-4">
+
+        <app-performance></app-performance>
+        <app-optimization></app-optimization>
+
+    </div>
+
+</div>

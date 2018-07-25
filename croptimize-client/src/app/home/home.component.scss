@@ -1,0 +1,23 @@
+.home_page {
+    text-align: center;
+    a {
+        cursor: pointer;
+    }
+    .logo {
+        margin: 20px auto;
+        transition: all linear .5s;
+        animation: logos 5s;
+        text-align: center;
+    }
+    h4 {
+        text-align: center;
+    }
+    @keyframes logos {
+        0% {
+            opacity: .1
+        }
+        100% {
+            opacity: 1
+        }
+    }
+}

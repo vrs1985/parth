@@ -1,0 +1,27 @@
+<div class="card ">
+    <div class="card-title text-left  text-uppercase">
+        Live - <i>{{ date }}</i>
+    </div>
+
+    <div class="card-body text-uppercase text-center">
+
+        <div class="text-uppercase">
+            <div class="peak-demand">
+                <div>Usage <span class="ctext-warning ">{{33.213}} W</span></div>
+                <div *ngIf="false">{{333}}</div>
+            </div>
+        </div>
+
+        <div class="text-uppercase">
+            <div class="peak-demand">
+                <div>Average <span class="ctext-regular ">{{28.213}} W</span></div>
+                <div *ngIf="additional"><small>{{ additional }}</small></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="card-bottom text-right ">
+        <a href="# " class="btn btn-success btn-sm " role="button ">Ways to improve</a>
+    </div>
+</div>

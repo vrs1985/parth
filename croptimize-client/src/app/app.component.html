@@ -1,0 +1,18 @@
+<nav class="navbar navbar-default ">
+    <div class="container-fluid">
+        <div class="navbar-header d-flex justify-content-between w-100">
+            <a class="navbar-brand" href="#">Croptimize</a>
+            <div class="header_buttons">
+                <button class="btn btn-outline-primary btn-margin" routerLink="/"> Home </button>
+                <button class="btn btn-outline-primary btn-margin" *ngIf="auth.isAuthenticated()" routerLink="/profile"> Profile </button>
+                <button class="btn btn-outline-primary btn-margin" *ngIf="auth.isAuthenticated()" (click)="auth.renewToken()"> Renew </button>
+                <button class="btn btn-outline-primary btn-margin" *ngIf="auth.isAuthenticated()" routerLink="/dashboard"> Dashboard </button>
+                <button id="qsLoginBtn" class="btn btn-outline-primary btn-margin" *ngIf="!auth.isAuthenticated()" (click)="auth.login()"> Log In </button>
+                <button id="qsLogoutBtn" class="btn btn-outline-danger btn-margin" *ngIf="auth.isAuthenticated()" (click)="auth.logout()"> Log Out </button>
+            </div>
+        </div>
+    </div>
+</nav>
+<main class="container-fluid">
+    <router-outlet></router-outlet>
+</main>
